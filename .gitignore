@@ -13,8 +13,9 @@
 # Mac File System
 *.DS_Store
 
-# Ctags
+# Ctags & Cscope
 *tags
+cscope.out
 
 # Vim Temporary
 *.swp

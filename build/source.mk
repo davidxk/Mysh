@@ -5,6 +5,7 @@ subsystem=builtin mysh
 ## List of Source files
 sources+=Cd.c \
 Exit.c \
+Ls.c \
 Pwd.c \
 Executor.c \
 Mysh.c \

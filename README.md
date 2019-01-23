@@ -1,23 +1,22 @@
-# $proj_name
-This is an auto generated README file. Please edit it before committing. 
+# Mysh
+Implementation of a simple shell using Unix system calls with limited support of the following commands
 
-## Introduction
-This is a C++ project template for toy projects developed on Unix-like platforms. 
-
-It is designed to work with the following development tools.
-
-* Github
-* GNU Make
-* UML
-* Unit Testing
-
-## Features
-* clean project organization
-* ready-to-go gitigore file
-* well-designed makefile structure
-* single file builds it all
+* pwd
+* cd
+* ls
+* exit
 
 ## Usage
-```
-mk_cxx_proj.sh project_name
+Making the main executable: 
+
+```bash
+make
+./main.out
 ``` 
+
+Running unit tests:
+
+```bash
+make test
+tests/test.out
+```

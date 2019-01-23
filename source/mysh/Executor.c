@@ -5,9 +5,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include "builtin/Pwd.h"
 #include "builtin/Cd.h"
 #include "builtin/Exit.h"
+#include "builtin/Ls.h"
+#include "builtin/Pwd.h"
 
 Job job;
 int fdIn, fdOut;
@@ -30,6 +31,8 @@ bool findRunCmd()
 		prepareIO(), pwd(job.argv);
 	else if( !strcmp(job.path, "cd") )
 		prepareIO(), cd(job.argv);
+	else if( !strcmp(job.path, "ls") )
+		prepareIO(), ls(job.argv);
 	else if( !strcmp(job.path, "ln") )
 		/*prepareIO(), ln(job.argv);*/
 		;
